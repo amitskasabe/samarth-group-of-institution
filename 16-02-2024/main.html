@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+      .test {
+        color: lightcoral;
+      } 
+      h1{
+        /* background-color: yellow; */
+        color: paleturquoise;
+      }
+      h2 {
+        background-color: red;
+      }
+      /* selector {
+
+        property : value
+
+      } */
+
+      div[data-name="amit"]{
+        color: coral;
+      }
+
+      /* tag[data-(dataname) = ['value']]{
+        property : value
+      }
+       */
+      h1[data-address="pandharpur"]{
+        background-color: #00ff00;
+        color: white;
+        font-family: monospace;
+      }
+      div[data-mother="malati"]
+      {
+        background-color: crimson;
+        color: blue;
+      }
+    </style>
+</head>
+<body>
+    <h1 id="cs" class="test" > This is a dummy text </h1>
+    <h2 class="head"> This is another heading tag </h2>
+    <h2> This is the thing , i don't want to apply css for it </h2>
+    <h1> Testing </h1>
+</body>
+</html>
+
+<!-- what is css  -->
+<!-- how to use it in 3 different ways  -->
+<!-- selectors in HTML - id - class - tag  -->
+
+<div data-name="amit"> This is amit </div>
+
+<h1 data-address="pandharpur" > Navi Peth , Pandharpur</h1>
+
+<div data-mother="malati"> Malati </div>
+
+<!-- tables in html  -->
+
+<!-- tables are combinations of rows and columns  -->
+<!-- the things which are verticle are called as columns  -->
+<!-- and the things which are horizontal are called as rows  -->
+<table border="1">
+    <thead>
+        <td> 1 </td>
+        <td> 2 </td>
+        <td> 3 </td>
+    </thead>
+    <tbody>
+        <!-- tr - table row  -->
+        <tr> 
+            <td>Proble1</td>
+            <!-- td - table data  -->
+            <td>Proble2</td>
+            <td>Proble 3</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table border="1">
+    <thead>
+        <td> Sr </td>
+        <td> Student Name </td>
+        <td> Student ID </td>
+        <td> Student's College Name </td>
+        <td> Student's Degree  </td>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Sonal</td>
+            <td>SONA124Y</td>
+            <td>PCCOE COllege Of Engineering</td>
+            <td>Bachelor Of Electronics and Tele.Comm</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Amit</td>
+            <td>AM123X</td>
+            <td>SVERI's College Of Engineering</td>
+            <td>Bachelor Of Computer Application</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Amit</td>
+            <td>AM123X</td>
+            <td>SVERI's College Of Engineering</td>
+            <td>Bachelor Of Computer Application</td>
+        </tr>
+    </tbody>
+</table>
