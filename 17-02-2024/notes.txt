@@ -1,0 +1,36 @@
+3 types of CSS 
+inline CSS 
+internal CSS
+external CSS
+
+syntax for css - 
+
+selector {
+    property : value
+}
+
+// colors in css
+there are mainly two types of color properties in css as color and background color 
+which can be achieved by following syntax 
+
+.className  {
+    color : red;
+    background-color:yellow;
+}
+// color can be specified in three different ways 
+
+color can be directly named 
+color can be given with color code - hexacode 
+color can be given in rgba values 
+
+
+
+
+(rgb)
+
+(red , green , blue)
+(255 , 0 , 0) -> red 
+
+(0 , 255 , 0 ) - green 
+
+(0 , 0 , 255) - blue

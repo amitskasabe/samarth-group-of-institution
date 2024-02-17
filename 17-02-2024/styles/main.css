@@ -1,0 +1,63 @@
+body {
+    background-color: #000;
+    color: #ffffff;
+}
+.test{
+    width: 100px;
+    height: 100px;
+    border-width: 1px;
+    color: white;
+    /* border-width: 1px;
+    border-color: red;
+    border-style: solid; */
+    border: 1px solid red;
+  
+    /* border-radius: 10px; */
+    border-radius: 10px 15px;
+    /* if there are only two things given so it will count as top-left and bottom right */
+    /* border-radius: 50%; */
+
+    /* top - left , top - right , bottom-right , bottom-left   */
+}
+
+/* margins and paddings */
+
+/*  */
+
+#parent{
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    /* padding: 10px; */
+    margin: 100px;
+}
+#child {
+    width: 200px;
+    height: 200px;
+    border:1px solid yellow;
+    margin: 20px;
+    padding: 10px;
+}
+#sub-child{
+    width: 100px;
+    height: 100px;
+    border: 1px solid darkorange;
+
+}
+/* margin and padding have 4 params  */
+/* 
+
+margin : 10 px 
+it means that 
+
+margin-top : 10px 
+margin-right : 10px;
+margin-bottom : 10px
+margin-left : 10px
+
+margin:10px;
+margin: 10px 5px;
+
+
+
+*/
