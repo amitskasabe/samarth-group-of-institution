@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex {
+            display: flex;
+        }
+        .justify-space-between {
+            justify-content: space-between;
+        }
+        #navbar{ 
+            background-color: darkslategray;
+            color: white;
+            height: 50px;
+            align-items: center;
+            text-transform:capitalize;
+        }
+        .nav-items{
+        
+            list-style: none;
+        }
+        ul li {
+            margin: 0px 10px;
+        }
+        .outer-container{
+            background-color: yellow;
+            
+            
+        }
+        .flex-col {
+            flex-direction: column;
+        }
+        .inner-container {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        .items-center{
+            align-items: center;
+        }
+        .justify-center{
+            justify-content: center;
+        }
+        .child2 {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="flex justify-space-between">
+        <div class="left-side">
+            CODESEED
+        </div>
+        <div class="right-side">
+            <ul class="nav-items flex">
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+                <li>Courses</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="hero">
+        <div class="outer-container flex items-center justify-center flex-col">
+            <div class="inner-container">
+                inner container
+            </div>
+            <div class="inner-container child2">
+                inner container
+            </div>
+            <div class="inner-container">
+                inner container
+            </div>
+            <div class="inner-container child2">
+                inner container
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

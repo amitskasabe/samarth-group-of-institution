@@ -1,0 +1,44 @@
+Flex Box 
+
+Container and Items:
+
+Flexbox is designed for one-dimensional layouts, either in a row or a column.
+The container becomes a flex container by applying display: flex; or display: inline-flex; to it.
+The child elements inside the container become flex items.
+
+Main Axis and Cross Axis:
+Flexbox works along two axes: the main axis and the cross axis.
+The flex-direction property defines the main axis direction (row, row-reverse, column, column-reverse).
+The cross axis is perpendicular to the main axis.
+Justify Content:
+
+justify-content aligns items along the main axis.
+Values: flex-start, flex-end, center, space-between, space-around, space-evenly.
+Align Items and Align Self:
+
+align-items aligns items along the cross axis.
+Values: flex-start, flex-end, center, baseline, stretch.
+align-self allows individual items to override align-items.
+Flex Container Properties:
+
+flex-direction: Defines the main axis direction.
+flex-wrap: Controls whether items should wrap.
+flex-flow: A shorthand for flex-direction and flex-wrap.
+justify-content: Aligns items along the main axis.
+align-items: Aligns items along the cross axis.
+align-content: Aligns content when there is extra space on the cross axis.
+Flex Item Properties:
+
+order: Specifies the order of the flex item.
+flex-grow: Specifies how much a flex item will grow relative to the rest.
+flex-shrink: Specifies how much a flex item will shrink relative to the rest.
+flex-basis: Specifies the initial size of a flex item.
+flex: A shorthand for flex-grow, flex-shrink, and flex-basis.
+Responsive Design with Flexbox:
+
+Flexbox is great for creating responsive layouts.
+Combine with media queries to adjust layout based on screen size.
+Browser Support:
+
+Flexbox has good support in modern browsers.
+Always check for specific properties and values support, especially in older browsers.
