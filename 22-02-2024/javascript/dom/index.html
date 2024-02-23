@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1> This is amit from codeseed </h1>  
+  <h1 id="test"> This is another tag </h1>
+  <h1> This is another tag </h1>
+  <h1> This is another tag </h1>
+  <h1 class="testing"> This is another tag </h1>
+  <div class="testing"> test </div>
+  <script>
+    // using selector id 
+    // using selector class 
+    // using selector tag 
+
+    // document.getElementsByTagName('tagname');
+    let x = document.getElementsByTagName('h1')[4];
+    x.style.color = "red";
+    
+    let y = document.getElementById('test');
+    console.log(y);
+
+    y.style.color = "yellow";
+
+    let z = document.getElementsByClassName('testing')[0];
+    console.log(z);
+
+    z.style.color = "blue";
+
+
+  </script>
+</body>
+</html>
