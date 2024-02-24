@@ -1,0 +1,38 @@
+<style>
+
+    :root{
+        --background-color:white;
+        --color:black;
+    }
+    body{
+        background-color: var(--background-color);
+        color:var(--color);
+    }
+    .parent-container{
+        display: grid;
+        grid-template-columns: repeat(2 , 2fr);
+    }
+    .child-1{
+        background-color: orange;
+    }
+    .child-2{
+        background-color: blue;
+    }
+    .child-3{
+        background-color: red;
+    }
+</style>
+<div class="parent-container">
+    <div class="child-1">
+        child-1
+    </div>
+    <div class="child-2">
+        child-2
+    </div>
+    <div class="child-3">
+        child-3
+    </div>
+    <div class="child-3">
+        child-3
+    </div>
+</div>
