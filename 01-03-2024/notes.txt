@@ -1,0 +1,4 @@
+Make your componets consitant 
+make margins consitant
+use specific colors 
+design minimalistic UI 

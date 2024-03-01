@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav , ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            width: 100wv;
+            background-color: red;
+            height: 30px;
+            display: flex;
+            /* 12 */
+        }
+        .sub-1 {
+            flex-basis: 50%;
+            background-color: yellow;
+            height: 100%;
+        }
+        .sub-2 {
+            flex-basis: 50%;
+            background-color: black;
+        }
+        .sub-3{
+            background-color: orange;
+        }
+        .sub-4{
+            background-color: greenyellow;
+        }
+        .col-6 {
+            flex-basis: 50%;
+        }
+        .col-3 {
+            flex-basis: 25%;
+        }
+        @media screen and (max-width: 768px)
+        {
+            nav , ul {
+                flex-direction: column;
+            }
+            
+            a{
+                margin: 0px!important;
+            }
+            .container {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div> Codeseed </div>
+        <ul>
+            <li><a href="" >Home</a></li>
+            <li><a href="" >Contact</a></li>
+            <li><a href="" >About</a></li>
+        </ul>
+        <div> Contact </div>
+    </nav>
+    <div class="container">
+        <div class="sub-1 col-3">
+            1
+        </div>
+        <div class="sub-2 col-3">
+            3
+        </div>
+        <div class="sub-3 col-3">
+            3
+        </div>
+        <div class="sub-4 col-3">
+            3
+        </div>
+    </div>
+</body>
+</html>

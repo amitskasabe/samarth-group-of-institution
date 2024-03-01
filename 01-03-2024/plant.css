@@ -1,0 +1,45 @@
+:root {
+    --bg:#98ABEE;
+    --text-color : #ADBC9F;
+    --button : #201658;
+    --light : #ffffff;
+    --link-color :#1D24CA;
+    --radius : 5px;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.product{
+    width: 400px;
+    height: auto;
+    background-color: var(--light);
+    padding: 50px 10px;
+    border-radius: var(--radius);
+}
+
+#plant-image{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius);
+}
+
+#purchase {
+    padding: 10px;
+    color: var(--light);
+    background-color: var(--button);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.product-description{
+    color: var(--link-color);
+}
+
+.demo-container{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+}
