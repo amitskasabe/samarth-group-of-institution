@@ -1,0 +1,9 @@
+positions in CSS
+static
+    - this is the default position in css 
+relative 
+    - It can be used to move element to any position in the document
+absolute
+    - It is used to move element to the any position in the document but it does not leave space it was aquiring in the document
+fixed 
+    - It fixes the position of the document

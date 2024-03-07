@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #D9D9D9;
+            
+        }
+        .flex {
+            display: flex;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+        .items-center{
+            align-items:center;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .space-x-10{
+            margin: 0px 10px;
+        }
+        .space-x-40{
+            margin: 0px 40px;
+        }
+        .px-72{
+           padding: 0px 72px; 
+        }
+        .h-72{
+            height: 72px;
+          
+        }
+        .text-dark{
+            color: black;
+        }
+        .text-light{
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .text-2xl{
+            font-size: 20px;
+        }
+       #hero .left-section {
+        flex-basis: 50%;
+        background-color: yellow;
+        
+       }
+       #hero .right-section {
+        flex-basis: 50%;
+        background-color: pink;
+       }
+    </style>
+</head>
+<body>
+    <nav class="px-72 h-72">
+        <div>
+            <h2> Codeseed </h2>
+        </div>
+        <div>
+            <ul class="flex items-center justify-between ">
+                <li class="space-x-10"><a href="" class="text-dark text-2xl">Home</a></li>
+                <li class="space-x-10"><a href="" class="text-dark text-2xl">About</a></li>
+                <li class="space-x-10"><a href="" class="text-dark text-2xl">Contact</a></li>
+                <li class="space-x-10"><a href="" class="text-dark text-2xl">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="hero" class="flex px-72">
+        <div class="left-section" >
+            <h3> Hello There , I am a web developer</h3>
+        </div>
+        <div class="right-section">
+            <img src="" alt="">
+        </div>
+    </section>
+</body>
+</html>

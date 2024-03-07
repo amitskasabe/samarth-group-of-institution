@@ -1,0 +1,22 @@
+do not use vibrant colors such as red 
+lightgreen 
+
+use very thin borders like 0.5 pixel and color to be gray 
+
+do not use much colors in your website , although use set of colors by prefining it 
+
+use consitant UI 
+
+use borders at max 10 pixels 
+
+use color palletes and learn color psychology
+
+
+color palletes
+
+#0D1F2D
+#546A7B
+
+
+if using input box , add some padding in it mostly around 10px
+

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: lightblue;
+}
+.container{
+    display: flex;
+    padding: 10px;
+    border:1px solid red;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 0px 10px;
+}
+.box1{
+    background-color: white;
+    position: static;
+    top: 90px;
+}
+.box2{
+    background-color: yellow;
+    position: absolute;
+    left:30px;
+    top: 20px;
+}
+.box3{
+    background-color: gray;
+    /* position: absolute; */
+    top: 100px;
+    left: 100px;
+    
+}
+.box4 {
+    background-color: orange;
+}
+ul {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+    height: 30px;
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+}
+
+p{
+    margin-top: 10px;
+}
