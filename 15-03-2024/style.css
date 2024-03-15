@@ -1,0 +1,180 @@
+:root {
+    --primary : #F2E205;
+    --secondary : #F2CC0C;
+    --dark-yellow : #F2BB13;
+    --silver : #F2EFE9;
+    --black : #262626;
+    --light:#fff;
+    --btn-radius:25px;
+    --font : "Montserrat", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--font);
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 35px;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.nav-item{
+    margin: 0px 10px;
+    color: black;
+}
+
+.btn{
+    border-radius: var(--btn-radius);
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    width: 140px;
+}
+
+#lets-talk{
+    background-color: var(--primary);
+}
+
+#hero{
+    display: flex;
+    padding: 10px 90px;
+    /* background-color: green; */
+    height: 60vh;
+}
+#hero .left{
+    flex-basis: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+   
+}
+
+#hero .right{
+    flex-basis: 35%;
+
+ 
+}
+.text-heading{
+    font-size: 40px;
+}
+
+.hero-skills{
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+
+}
+
+.hero-skills .hero-skill-single{
+    margin: 10px 30px;
+    font-size: 20px;
+
+}
+.hero-skill-single-first{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.skill-star{
+    color: var(--dark-yellow);
+    font-size: 20px;
+}
+.hero-main-image{
+    width: 100%;
+    height: 110%;
+}
+.button-one{
+    background-color: transparent;
+}
+
+.transparent-btn{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#skills {
+
+    width: 100%;
+    background-color: var(--black);
+    margin: 70px 0px;
+}
+.skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    height: 100px;
+
+}
+.skill-single{
+    color: white;
+    font-size: 20px;
+}
+
+.text-center{
+    text-align: center;
+}
+#services{
+    padding: 20px 100px;
+}
+#services .services-container .service-single{
+    width: 300px;
+    height: 100px;
+    background-color: var(--silver);
+    border: 0.3px solid lightgray;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.button-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-all{
+    background-color: var(--primary);
+}
+
+#portfolios{
+    padding: 60px;
+}
+
+.portfolio-single{
+    width: 350px;
+    height: auto;
+    padding: 35px;
+    border: 0.5px solid black;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.portfolio-single p {
+    margin-top: 40px;
+}
+.portfolio-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+}
