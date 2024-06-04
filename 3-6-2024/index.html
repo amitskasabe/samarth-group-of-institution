@@ -1,0 +1,56 @@
+<style>
+    .color-red {
+        background-color: red;
+
+    }
+</style>
+<h1 id="sample-id" style="color: red;">hello js</h1>
+<h2 class="color-red">Hi</h2>
+<h2 class="color-red">Hello</h2>
+
+
+<h3 class="ele">Hey</h3>
+<h3 class="ele">Hello</h3>
+
+<div>Amit</div>
+<div>Codeseed</div>
+<div>Sonal</div>
+
+<h4 id="h4">This is some heading</h4>
+<h4 class="h4">This is some heading again</h4>
+
+<h6>This is amit from CS</h6>
+
+
+<input type="text" name="" value="amitkasabe" id="myname">
+
+
+
+<script>
+    let h1 = document.getElementById("sample-id");
+    console.log(h1);
+
+    const h2 = document.getElementsByClassName("color-red")[1]; //
+    console.log(h2);
+
+    const ele = document.getElementsByClassName("ele")[0];
+    ele.style.color = "yellow";
+    // h1.style.color = "red";
+
+    let divs = document.getElementsByTagName("div");
+    console.log(divs);
+
+    const element = document.querySelector("#h4");
+    console.log(element);
+    const element1 = document.querySelector(".h4");
+    console.log(element1);
+
+    const h6 = document.getElementsByTagName("h6")[0].innerHTML;
+    document.write(h6);
+
+    const myName = document.querySelector("#myname").value;
+    console.log(myName);
+
+    document.write(myName);
+
+</script>

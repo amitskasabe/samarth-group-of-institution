@@ -178,3 +178,29 @@ a {
     align-items: center;
     margin: 20px 0px;
 }
+
+
+#footer{
+    background-color: var(--black);
+
+    width: auto;
+}
+
+.ka{
+    color: white;
+    padding: 20px 300px;
+    display: flex;
+  
+}
+.social-links{
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: red; */
+    align-items:baseline;
+    margin-top: 20px;
+    height: auto;
+}
+
+.logo-text{
+    font-size: 70px;
+}

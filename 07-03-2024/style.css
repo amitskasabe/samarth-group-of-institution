@@ -9,6 +9,7 @@ body {
     display: flex;
     padding: 10px;
     border:1px solid red;
+    position: fixed;
 }
 .box {
     width: 150px;

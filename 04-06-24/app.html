@@ -1,0 +1,53 @@
+<button id="hello">SayHello</button>
+
+<button onclick="return clickMeFunction()">Click Me</button>
+
+
+<select name="" id="gender">
+    <option value="choose">Choose Gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+</select>
+
+
+<form action="" method=""></form>
+
+
+<script>
+    const btn = document.querySelector("#hello");
+    btn.addEventListener("click" , function(){
+        console.log(`hello `);   
+    })
+
+
+    function add(a , b){
+        console.log(a + b);
+    }
+
+    const result = add(10 , 20);
+    console.log(result);
+
+    const addition = (a , b) => {
+        return a + b;
+    }
+
+    const res = addition(10 , 20);
+    console.log(res);
+
+    const clickMeFunction = () => {
+       alert("hello alert this function")
+    }
+
+
+    const subtract =(x , y) => {
+        return x - y;
+    }
+    console.log(subtract(10 , 10));
+    // console.log();
+    
+    const selectGender = document.querySelector("#gender");
+    selectGender.addEventListener("change", function(){
+        console.log('changed');
+    })
+    // console.log("hello")
+</script>

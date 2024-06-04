@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #ffff0a;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .gradient {
+            --size: 750px;
+            --speed: 50s;
+            --easing: cubic-bezier(0.8, 0.2, 0.2,0.8);
+            width: var(--size);
+            height: var(--size);
+            filter: blur(calc(var(--size)/5));
+            background-image: linear-gradient(#ff002fd9, #ff6200);
+            animation: rotate var(--speed) infinite linear var(--easing);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            animation: pulsate 2s infinite alternate;
+        }
+
+        @keyframes pulsate {
+            0% {
+                transform: scale(0.95);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        body {
+            background-color: #b7d435;
+            position: absolute;
+            inset: 0;
+            display: flex;
+            place-content: center;
+            align-items: center;
+            filter: blur(10px);
+        }
+        *{
+            transition: all 2s ease-out;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gradient"></div>
+</body>
+</html>
