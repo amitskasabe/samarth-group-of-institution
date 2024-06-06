@@ -1,0 +1,27 @@
+<form method="post">
+    <input type="text" name="username" id="username">
+    <input type="text" name="password" id="password">
+    <input type="submit" value="Submit" id="submit">
+    <span id="error"></span>
+</form>
+
+<script>
+    const submit = document.querySelector("#submit");
+    submit.addEventListener("click" , (e) => {
+       ;
+        e.preventDefault();
+        const username = document.querySelector("#username").value;
+        const password = document.querySelector("#password").value;
+        const error = document.querySelector("#error");
+        if(username == "" || password == "")
+        {
+            error.innerHTML = "Please enter a username and password.";   
+            error.style.color = "red";        
+        } else if (password.length < 8){
+            console.log("password must be at least 8 characters");
+        } else {
+            error.innerHTML = "";
+            
+        }
+    })
+</script>

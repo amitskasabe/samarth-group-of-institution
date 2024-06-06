@@ -1,0 +1,32 @@
+<form method="post">
+    <input type="text" name="" id="txt">
+    <input type="submit" value="Submit" id="btn">
+    <span id="error"></span>
+</form>
+
+<script>
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click" ,(e) => {
+        let flag = 0;
+
+        // event.preventDefault();
+        const input = document.getElementById("txt").value;
+        const error = document.getElementById("error");
+        if(input == ""){
+            error.innerHTML = "Please enter something in the input field";
+            flag = 1;
+
+        } else if (input){
+            error.innerHTML = "";
+            
+        } else {
+            flag = 0;
+        }
+
+        if(flag == 1){
+            e.preventDefault();
+        } 
+
+        console.log(flag);
+    })
+</script>
