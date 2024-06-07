@@ -1,0 +1,25 @@
+<style>
+    .hide{
+        display: none;
+    }
+</style>
+<p id="demo">Display</p>
+<button id="btn">Click</button>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    // $("#btn").click(()=>{
+    //     $("#demo").toggle();
+    // })
+    const btn = document.querySelector("#btn");
+    btn.addEventListener("click" , () => {
+        const demo = document.querySelector("#demo");
+        demo.classList.add("hide");
+    })
+    // btn.addEventListener("click" , () => {
+    //     const demo = document.querySelector("#demo");
+    //     demo.classList.remove("hide");
+    // })
+
+
+    
+</script>
