@@ -1,0 +1,31 @@
+<button id="btn">Active</button>
+<!-- <input type="hidden" name="" id="flag" value="0" /> -->
+<p id="f">0</p>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+  let flag = document.getElementById("f").innerHTML;
+  const btn = $("#btn");
+  if (flag == 0) {
+    btn.on("click", function (e) {
+      flag.innerHTML = 1;
+      btn.html("Deactive");
+    });
+  }
+
+  if (flag == 1) {
+    btn.on("click", function (e) {
+      btn.html("Active");
+      flag.innerHTML = 0;
+    });
+  }
+
+  console.log(flag);
+
+  //   function activate()
+  //   {
+
+  //   }
+  //   function deactive(){
+
+  //   }
+</script>
