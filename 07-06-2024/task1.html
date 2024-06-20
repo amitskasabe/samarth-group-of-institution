@@ -4,17 +4,22 @@
     }
 </style>
 <p id="demo">Display</p>
+<p>amit</p>
 <button id="btn">Click</button>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
     // $("#btn").click(()=>{
     //     $("#demo").toggle();
     // })
+    
     const btn = document.querySelector("#btn");
     btn.addEventListener("click" , () => {
         const demo = document.querySelector("#demo");
         demo.classList.add("hide");
     })
+
+    const btns = document.getElementsByTagName("p")[1];
+    console.log(btns);
     // btn.addEventListener("click" , () => {
     //     const demo = document.querySelector("#demo");
     //     demo.classList.remove("hide");

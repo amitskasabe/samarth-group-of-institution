@@ -1,0 +1,17 @@
+<button>Dark Mode</button>
+<body>
+    <h1> Hello </h1>
+  
+</body>
+
+<script>
+    const button = document.querySelector('button');
+    button.addEventListener('click',() => {
+        const body = document.querySelector('body');
+        console.log(body);
+        body.style.backgroundColor = 'black';
+        document.getElementsByTagName('h1')[0].style.color = "white";
+        
+
+    });
+</script>
