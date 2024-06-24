@@ -1,0 +1,19 @@
+<input type="number" id="num1">
+<input type="number" id="num2">
+<input type="text" id="output" >
+<button id="calc">Calculate</button>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    const addTwoNumber = (num1 , num2 , output)=>{
+        const result = parseInt(num1) + parseInt(num2);
+        output.val(result);
+    }
+
+    $("#calc").on("click" , ()=>{
+        console.log("click");
+        const num1 = $("#num1").val();
+        const num2 = $("#num2").val();
+        const output = $("#output");
+        addTwoNumber(num1 , num2 , output);
+    })
+</script>
