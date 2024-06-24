@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <input type="text" id="username">
+    <button id="validate">Validate</button>
     <div id="error"></div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-        $("#username").on("blur" , () => {
-            if($("#username").val() == ""){
-                $("#error").html("Please enter something")
-                $("#error").css("color" , "red");
+        function validate(username, error , message) {
+            if (username.val() == "") {
+                error.html(message);
+                error.css("color" , "red");
             }else {
-                $("#error").html(" ");
+                error.html("");
             }
-        }) 
+        }
+        $("#username").on("blur", () => {
+            const username = $("#username");
+            const error = $("#error");
+            validate(username , error , "please enter a valid username");
+            
+        })
+        $("#validate").on("click", () => {
+            const username = $("#username");
+            const error = $("#error");
+            validate(username , error , "please enter a valid username");
+            
+        })
+
         // HTML , CSS , Javascript 
     </script>
-    
+
 </body>
+
 </html>
