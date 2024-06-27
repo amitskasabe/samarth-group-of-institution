@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .body-content{
+            height: 100vh!important;
+        }
+    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- if two numbers add up to 50 so show a green panel and if it is greater than 50 so show the red panel -->
+    <!-- components -->
+    <div class="alert alert-success d-none" id="green" role="alert">
+       Success
+    </div>
+    <div class="alert alert-danger d-none" id="red" role="alert">
+        Failure
+    </div>
+   <div class="body-content d-flex justify-content-center align-items-center  ">
+    <button id="calculate" onclick="return calc()" class="btn btn-success">
+        calculate
+    </button>
+   </div>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        const result = [
+        {
+            name : "amit",
+            marks : 41
+        },
+        
+
+        ];
+        function calc()
+        {
+            
+            const red = document.querySelector("#red");
+            const green = document.querySelector("#green");
+            if(c >= 50){
+                red.classList.remove("d-none");
+            } else {
+                green.classList.remove("d-none");
+            }
+            
+        }
+    </script>
+</body>
+
+</html>

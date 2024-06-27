@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <script>
+        const People = [
+            {
+                name: "amit",
+                surname: "kasabe",
+                title: "founder",
+                companyName: "codeseed"
+            },
+            {
+                name: "shruti",
+                surname: "lokhande",
+                title: "Manager",
+                companyName: "codeseed"
+            },
+            {
+                name: "Priya",
+                surname: "Singh",
+                title: "Marketing Specialist",
+                companyName: "CodeSeed"
+            },
+            {
+                name: "Anuj",
+                surname: "Gupta",
+                title: "HR Manager",
+                companyName: "CodeSeed"
+            },
+            {
+                name: "Neha",
+                surname: "Patil",
+                title: "Content Writer",
+                companyName: "CodeSeed"
+            },
+            {
+                name: "Vikram",
+                surname: "Joshi",
+                title: "Sales Executive",
+                companyName: "CodeSeed"
+            },
+            {
+                name: "Pooja",
+                surname: "Desai",
+                title: "Graphic Designer",
+                companyName: "CodeSeed"
+            },
+            {
+                name: "Manoj",
+                surname: "Mehta",
+                title: "Financial Analyst",
+                companyName: "CodeSeed"
+            },
+            {
+                name: "Ritu",
+                surname: "Malhotra",
+                title: "Customer Support",
+                companyName: "CodeSeed"
+            },
+        ];
+    </script>
+</head>
+
+<body class="container mt-5">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <script>
+                for (let i = 0; i <= People.length; i++) {
+                    document.write(`<tr class="">
+                        <td>${i + 1}</td>
+                        <td>${People[i].name}</td>
+                        <td>${People[i].surname}</td>
+                        </tr>`)
+                }
+            </script>
+
+        </tbody>
+    </table>
+    <!-- <script src="test.js"></script> -->
+</body>
+
+</html>
