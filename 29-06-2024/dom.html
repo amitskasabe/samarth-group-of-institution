@@ -1,0 +1,53 @@
+<!-- element  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+
+<body>
+    <!-- id , class , tagname -->
+    <!-- 
+    id = document.getElementById("id"); 
+    // element 
+    id = document.getElementById("id").value; 
+    // value
+    
+     -->
+    <h1 id="hello">amit</h1>
+    <button id="btn">Click Me</button>
+    <!-- html element -->
+    <!-- innnerHTML  -->
+    <input type="text" value="amit" id="txt">
+    <script>
+        // console.log(document.getElementById("txt").value);
+        // console.log(document.getElementById("hello").innerHTML);
+
+        const button = document.getElementById("hello")
+        console.log(button);
+        // es 5 function 
+        // function(){} or () => 
+        // ES 6 
+        // ES 5 
+        button.addEventListener("click", ()=> {
+            alert("Hello!");
+        })
+
+        document.getElementById("btn").addEventListener("click" , ()=>{
+            console.log("clicked");
+        })
+        
+     
+        // events 
+
+        // blur input click
+
+
+
+    </script>
+</body>
+
+</html>
