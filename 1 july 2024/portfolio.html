@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+            overflow-x: hidden !important;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .dropdown-toggle {
+            border: none !important;
+        }
+
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 400px;
+            gap: 20px;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+        }
+
+        .each {
+            background: #f1f3f6;
+            box-shadow: inset 0 0 5px rgba(55, 84, 170, 0),
+                inset 0 0 10px rgba(255, 255, 255, 0), 5px 5px 9px rgba(55, 84, 170, 0.15),
+                -5px -5px 11px white, inset 0px 0px 2px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.2s ease-in-out;
+            height: 190px;
+            width: 190px;
+            border-radius: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 5px solid #eaeef5;
+        }
+
+        .skills:hover .each {
+            box-shadow: inset 4px 4px 7px rgba(55, 84, 170, 0.15),
+                inset -4px -4px 10px white, 0px 0px 2px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.2s ease-in-out;
+        }
+
+        .each .box {
+            padding: 16px;
+        }
+
+        .css .box {
+            text-align: right;
+        }
+
+        .js .box {
+            margin-top: 40px;
+        }
+
+        .ng .box {
+            margin-top: 40px;
+            text-align: right;
+        }
+
+        .each .box .content h2 {
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+
+        .each .box .content p {
+            font-size: 12px;
+            margin: 0;
+        }
+
+        .html .box .content i {
+            margin-top: 40px;
+        }
+
+        .css .box .content i {
+            font-size: 30px;
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+
+        .skill-card {
+            margin-bottom: 1rem;
+            border: 1px solid #F0ECE3;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+            transition: 0.5s all ease;
+            cursor: pointer;
+        }
+
+        .skill-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+            border-color: #000;
+        }
+
+        .skill-card:hover .card-img {
+            border-bottom-color: #000;
+        }
+
+        .skill-card .card-img {
+            padding: 10px;
+            border-bottom: 1px solid #F0ECE3;
+            border-radius: 0;
+            display: flex;
+            align-items: center;
+            transition: 0.5s all ease;
+        }
+
+        .skill-card .card-img img {
+            margin: auto;
+            width: 100px;
+            height: auto;
+        }
+
+        .skill-card .card-body h4 {
+            color: #000;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        /* footer css */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {}
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        a,
+        a:active,
+        a:focus {
+            color: #333;
+            text-decoration: none;
+            transition-timing-function: ease-in-out;
+            -ms-transition-timing-function: ease-in-out;
+            -moz-transition-timing-function: ease-in-out;
+            -webkit-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-duration: .2s;
+            -ms-transition-duration: .2s;
+            -moz-transition-duration: .2s;
+            -webkit-transition-duration: .2s;
+            -o-transition-duration: .2s;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+}
+    
+.footer {
+    background: linear-gradient(105deg,#6e99e6 ,#093c94);
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+/*END FOOTER SOCIAL DESIGN*/
+.single_footer{}
+@media only screen and (max-width:768px) { 
+.single_footer{margin-bottom:30px;}
+}
+.single_footer h4 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.single_footer h4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    margin-top: 20px;
+}
+.single_footer p{color:#fff;}
+.single_footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.single_footer ul li{}
+.single_footer ul li a {
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 36px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.single_footer ul li a:hover { color: #ff3666; }
+
+.single_footer_address{}
+.single_footer_address ul{}
+.single_footer_address ul li{color:#fff;}
+.single_footer_address ul li span {
+    font-weight: 400;
+    color: #fff;
+    line-height: 28px;
+}
+.contact_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+/*START NEWSLETTER CSS*/
+.subscribe {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+}
+.subscribe__input {
+background-color: #fff;
+border: medium none;
+border-radius: 5px;
+color: #333;
+display: block;
+font-size: 15px;
+font-weight: 500;
+height: 60px;
+letter-spacing: 0.4px;
+margin: 0;
+padding: 0 150px 0 20px;
+text-align: center;
+text-transform: capitalize;
+width: 100%;
+}
+@media only screen and (max-width:768px) { 
+.subscribe__input{padding: 0 50px 0 20px;}
+}
+
+.subscribe__btn {
+background-color: transparent;
+border-radius: 0 25px 25px 0;
+color: #01c7e9;
+cursor: pointer;
+display: block;
+font-size: 20px;
+height: 60px;
+position: absolute;
+right: 0;
+top: 0;
+width: 60px;
+}
+.subscribe__btn i{transition: all 0.3s ease 0s;}
+@media only screen and (max-width:768px) { 
+.subscribe__btn{right:0px;}
+}
+
+.subscribe__btn:hover i{
+    color:#ff3666;
+}
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+/*END NEWSLETTER CSS*/
+
+/*START SOCIAL PROFILE CSS*/
+.social_profile {margin-top:40px;}
+.social_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0;
+}
+.social_profile ul li{float:left;}
+.social_profile ul li a {
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 0px 5px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+@media only screen and (max-width:768px) { 
+.social_profile ul li a{margin-right:10px;margin-bottom:10px;}
+}
+@media only screen and (max-width:480px) { 
+.social_profile ul li a{
+    width:40px;
+    height:40px;
+    line-height:40px;
+}
+}
+.social_profile ul li a:hover{
+background:#ff3666;
+border: 1px solid #ff3666;
+color:#fff;
+border:0px;
+}
+/*END SOCIAL PROFILE CSS*/
+.copyright {
+    margin-top: 70px;
+    padding-top: 40px;
+    color:#fff;
+    font-size: 15px;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    text-align: center;
+}
+.copyright a{color:#01c7e9;transition: all 0.2s ease 0s;}
+.copyright a:hover{color:#ff3666;}
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav class="container navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">AMIT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <h1></h1>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ecommerce</a></li>
+                                <li><a class="dropdown-item" href="#">Food Delivery</a></li>
+
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                    <div class="profile d-flex">
+                        <ul class="d-flex d-none  align-items-center">
+                            <li class="nav-items"><a href="" class="nav-link">amit</a></li>
+                            <li class="nav-items"><a href="" class="nav-link">amit</a></li>
+                            <li class="nav-items"><a href="" class="nav-link">amit</a></li>
+                        </ul>
+                        <div class="dropdown">
+                            <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                                    width="40" height="40" alt="profile">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <section>
+            <div style="height: 100vh; background-image: url(https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80); background-size: cover; background-position: center;"
+                class="position-relative w-100">
+                <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center"
+                    style="top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.7);">
+                    <div class="container">
+                        <div class="col-md-6">
+                            <span style="color: #bbb;" class="text-uppercase">SubHeadline</span>
+                            <!-- on small screens remove display-4 -->
+                            <h1 class="mb-4 mt-2 display-4 font-weight-bold">Enter Your <span
+                                    style="color: #9B5DE5;">Headline Here</span></h1>
+                            <p style="color: #bbb;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
+                                eos ea, cum quae facilis optio impedit tempora aliquam at eveniet?</p>
+                           <div class="d-flex">
+                            <div class="mt-5">
+                                <!-- hover background-color: white; color: black; -->
+                                <a href="#" class="btn px-5 py-3 text-white mt-3 mt-sm-0"
+                                    style="border-radius: 30px; background-color: #9B5DE5;">Get Started</a>
+                            </div>
+                            <div class="mt-5">
+                                <!-- hover background-color: white; color: black; -->
+                                <a href="resume.txt" download class="btn px-5 py-3 ml-3 text-white mt-3 mt-sm-0"
+                                    style="border-radius: 30px; background-color: #06aafc;">Download Resume</a>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            </a>
+        </section>
+        <section id="skills">
+            <div class="mt-4"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <div class="card skill-card">
+                            <div class="card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h4>HTML</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card skill-card">
+                            <div class="card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h4>HTML</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card skill-card">
+                            <div class="card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h4>HTML</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card skill-card">
+                            <div class="card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h4>HTML</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card skill-card">
+                            <div class="card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h4>HTML</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card skill-card">
+                            <div class="card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png"
+                                    alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h4>HTML</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="footer">
+                <div class="container">     
+                    <div class="row">                       
+                        <div class="col-lg-4 col-sm-4 col-xs-12">
+                            <div class="single_footer">
+                                <h4>Services</h4>
+                                <ul>
+                                    <li><a href="#">Lorem Ipsum</a></li>
+                                    <li><a href="#">Simply dummy text</a></li>
+                                    <li><a href="#">The printing and typesetting </a></li>
+                                    <li><a href="#">Standard dummy text</a></li>
+                                    <li><a href="#">Type specimen book</a></li>
+                                </ul>
+                            </div>
+                        </div><!--- END COL --> 
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="single_footer single_footer_address">
+                                <h4>Page Link</h4>
+                                <ul>
+                                    <li><a href="#">Lorem Ipsum</a></li>
+                                    <li><a href="#">Simply dummy text</a></li>
+                                    <li><a href="#">The printing and typesetting </a></li>
+                                    <li><a href="#">Standard dummy text</a></li>
+                                    <li><a href="#">Type specimen book</a></li>
+                                </ul>
+                            </div>
+                        </div><!--- END COL -->
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="single_footer single_footer_address">
+                                <h4>Subscribe today</h4>
+                                <div class="signup_form">                           
+                                    <form action="#" class="subscribe">
+                                        <input type="text" class="subscribe__input" placeholder="Enter Email Address">
+                                        <button type="button" class="subscribe__btn"><i class="fas fa-paper-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="social_profile">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>                          
+                        </div><!--- END COL -->         
+                    </div><!--- END ROW --> 
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 col-xs-12">
+                            <p class="copyright">Copyright © 2019 <a href="#">Akdesign</a>.</p>
+                        </div><!--- END COL -->                 
+                    </div><!--- END ROW -->                 
+                </div><!--- END CONTAINER -->
+            </div>
+        </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
